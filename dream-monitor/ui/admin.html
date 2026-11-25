@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>用户管理 | 到梦空间本地助手</title>
+<link rel="stylesheet" href="/admin.css?v=4">
+</head>
+<body>
+<div class="wrapper">
+  <header class="masthead">
+    <div class="logo">梦</div>
+    <div class="heading"><span class="eyebrow">到梦空间 · 本地控制台</span><h1>用户管理</h1></div>
+    <a href="/" class="back">返回活动看板</a>
+  </header>
+  <main>
+    <section class="intro">
+      <div><h2>管理已保存的账号</h2><p>不必手动查数据库。这里会显示用户姓名、脱敏账号、用户 ID、会话和定时报名任务。</p></div>
+      <div class="pill">仅本机访问</div>
+    </section>
+    <p class="local-note">仅限运行本程序的电脑访问 · 无需管理员口令 · 删除账号仍需二次确认</p>
+    <section id="manager">
+      <div class="summary">
+        <div class="stat"><span>已保存账号</span><strong id="stat-total">—</strong></div>
+        <div class="stat"><span>有网页登录会话</span><strong id="stat-online">—</strong></div>
+        <div class="stat"><span>有未完成任务</span><strong id="stat-tasks">—</strong></div>
+      </div>
+      <section class="panel users-panel">
+        <div class="list-head"><div><h3>账号列表</h3><p>删除前请核对姓名、脱敏账号和用户 ID。</p></div><div class="controls"><input id="filter" type="search" placeholder="搜索姓名 / ID / 账号" aria-label="搜索用户"><button id="refresh" type="button" class="secondary">刷新</button></div></div>
+        <div id="user-list" class="user-list"><p class="empty">正在读取账号…</p></div>
+        <div class="privacy">不会展示完整手机号、登录密码、登录 Token 或会话密钥。这里的“会话”仅代表本地网页会话，不证明到梦空间 APP 在线。</div>
+      </section>
+      <section class="info"><strong>删除会发生什么？</strong><p>该账号会从本地彻底删除：资料、保存的密码与 Token、网页登录会话、定时任务和缓存文件全部清除，不留备份。其他账号与任务不受影响。若该账号正在等待或执行报名，程序会拒绝删除，防止误操作。不会注销官方到梦空间账号。</p></section>
+    </section>
+    <p class="message" id="message" role="status" aria-live="polite" hidden></p>
+  </main>
+  <footer>原版登录、活动筛选和定时报名功能保持不变 · 仅在本机管理账号</footer>
+</div>
+<dialog id="confirm" class="dialog">
+  <form method="dialog" id="delete-form">
+    <h2>确认删除这个账号？</h2>
+    <p id="target-info" class="target"></p>
+    <p class="warn">这会彻底删除该账号在本机保存的全部数据，并取消其全部定时报名任务。不留备份，删除后无法恢复；之后此人重新登录即可再次使用。</p>
+    <p class="delete-error" id="delete-error" role="alert" hidden></p>
+    <div class="modal-actions"><button id="cancel" type="button" class="secondary">返回</button><button id="delete" class="danger" type="submit">确认删除</button></div>
+  </form>
+</dialog>
+<script src="/admin.js?v=4" defer></script>
+</body>
+</html>
