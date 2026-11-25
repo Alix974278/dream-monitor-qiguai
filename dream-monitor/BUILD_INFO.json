@@ -1,0 +1,108 @@
+{
+  "project_version": "2.2.2-local.2.5.1",
+  "target": "Windows 10/11 x64",
+  "python": {
+    "version": "3.14.10",
+    "source": "https://www.python.org/ftp/python/3.14.10/python-3.14.10-embed-amd64.zip",
+    "sha256": "90905e64a840557d8c1bc4f5b74db3d7ee85e3ffb217611cac1c7813acea4159"
+  },
+  "dependencies": [
+    {
+      "wheel": "certifi-2026.10.23-py3-none-any.whl",
+      "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1"
+    },
+    {
+      "wheel": "charset_normalizer-3.5.2-py3-none-any.whl",
+      "sha256": "b6b751274acb69d77b3323d6b7dbaa3c7fdfc1eb829b7eb61d262f32e1af9685"
+    },
+    {
+      "wheel": "idna-3.20-py3-none-any.whl",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+    },
+    {
+      "wheel": "requests-2.34.2-py3-none-any.whl",
+      "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+    },
+    {
+      "wheel": "urllib3-2.8.0-py3-none-any.whl",
+      "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "source": "installed official PyYAML distribution",
+      "packaging": "pure Python source; optional native extension excluded"
+    }
+  ],
+  "automatic_time": {
+    "protocol": "NTP v4 client, compatible v3 server replies",
+    "providers": {
+      "aliyun": [
+        "ntp.aliyun.com",
+        "ntp1.aliyun.com"
+      ],
+      "tencent": [
+        "ntp.tencent.com",
+        "ntp1.tencent.com"
+      ]
+    },
+    "provider_documentation": [
+      "https://help.aliyun.com/zh/ecs/user-guide/alibaba-cloud-ntp-server",
+      "https://cloud.tencent.com/document/product/213/49082"
+    ],
+    "protocol_reference": "https://www.rfc-editor.org/rfc/rfc5905",
+    "requires_independent_providers": 2,
+    "max_samples_per_run": 8,
+    "refresh_interval_seconds": 300,
+    "critical_freeze_seconds": 60,
+    "changes_operating_system_clock": false,
+    "required_for_scheduling": false,
+    "fallback": "Program-start system clock, or the last internal calibration, explicitly shown as degraded"
+  },
+  "upstream": {
+    "name": "LinXiaoAn7/dream-monitor",
+    "version": "2.2.2",
+    "source": "user-uploaded source",
+    "url": "https://github.com/LinXiaoAn7/dream-monitor"
+  },
+  "runtime_check_environment": "Linux Python 3.12; Windows execution not verified",
+  "admin_manager": {
+    "local_only": true,
+    "ephemeral_admin_key": false,
+    "masked_user_listing": true,
+    "backups": false,
+    "delete_active_user_while_scheduler_active": false,
+    "verified_tests": "118 offline tests (check_local.py)",
+    "windows_machine_verified": false,
+    "manual_password_required": false,
+    "csrf_header_required_for_delete": true,
+    "localhost_only": true,
+    "delete_ui": "Click delete -> review masked identity -> click confirm (no typed UID / checkbox)",
+    "confirmed_boolean_required": true,
+    "delete_mode": "permanent: users/sessions/auto_signup rows + data/users/<uid>* cache files; secure_delete + VACUUM",
+    "relogin_after_delete_scheduling": "fixed in 2.2.2-local.2.3 (scheduler unblocks uid after successful delete)",
+    "current_login_marked_in_list": true,
+    "case_insensitive_admin_path_guard": true
+  },
+  "board_v24": {
+    "baseline": "OPUS v2.3 uploaded ZIP",
+    "default_filter": "eligible including future signup",
+    "sort": "signup opening ascending; future first; open second; missing last",
+    "offline_tests": 145,
+    "ui_assertions": 14,
+    "browser": "Windows Edge headless, 1440/390px, synthetic data",
+    "live_account_verified": false,
+    "personal_cache": "per-account, 300s TTL"
+  },
+  "board_v25": {
+    "background_refresh": "stage complete catalogue; explicit apply only",
+    "reading_position": "activity anchor + screen offset; nearest surviving fallback",
+    "backend_python_files_unchanged": 23,
+    "timed_ui_unchanged": true,
+    "offline_tests": 146,
+    "update_gate_tests": 10,
+    "filter_assertions": 14,
+    "live_account_verified": false
+  },
+  "display_credit": "by 奇怪同学"
+}

@@ -1,0 +1,285 @@
+{
+  "kind": "deterministic_offline_simulation",
+  "real_network_calls": 0,
+  "model": {
+    "response_seconds_per_request": 0.1,
+    "original_request_delay": 1.2,
+    "fixed_jitter_multiplier": 1.0,
+    "both_schedulers_start_seconds_before_open": 15,
+    "mock_not_open_business_code": "MOCK_NOT_OPEN",
+    "prefetch_unavailable_business_code": "11111"
+  },
+  "limitations": [
+    "No real success-rate measurement or real account verification.",
+    "Virtual clock excludes operating-system scheduling, DNS/TLS, encryption CPU time and packet loss.",
+    "One activity and one user; not a concurrent load test.",
+    "Mock server checks opening at request-send time; this is an explicit model assumption.",
+    "Network answers are synthetic fixtures, not claims about current official responses."
+  ],
+  "source_sha256": {
+    "original": {
+      "autosign.py": "d660929a70cfda65c1f3807ca9da4fd4e3ab95b8f9d3679e75340aee45cf7001",
+      "dmclient.py": "134bc660101039abffcc3e407810ca238bfb50906fb1a736d5339e1cc43d0da4",
+      "gui_server.py": "ece846dd4064747a36112703d4b023fae4eb3bd7dc141599e76c1977d4748527"
+    },
+    "optimized": {
+      "autosign.py": "b7efb5a478a13de1c9285d7071b41363ed9ce6b5acd33dcbfc76c1352eb3f58c",
+      "dmclient.py": "6ef871d5c6aa6a3662965e020f3668a2174a7a592b901531220df59c42c399b4",
+      "precision/signup.py": "809440c57bf21750a90b96d927d15385128f4c3e5f59b149312c540f90e8e0cf"
+    }
+  },
+  "scenarios": {
+    "A_form_available_before_open": {
+      "original": {
+        "first_post_open_submit_seconds": 2.7,
+        "submit_offsets_seconds": [
+          -13.8,
+          -10.5,
+          -7.2,
+          -3.9,
+          -0.6,
+          2.7
+        ],
+        "total_http_calls": 13,
+        "terminal_state": "success",
+        "requests": [
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -15.0,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": -13.8,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -11.7,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": -10.5,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -8.4,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": -7.2,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -5.1,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": -3.9,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -1.8,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": -0.6,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": 1.5,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": 2.7,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/activity/detail",
+            "send_offset_seconds": 3.9,
+            "timeout_setting": 20
+          }
+        ],
+        "scheduler_snapshot": null
+      },
+      "optimized": {
+        "first_post_open_submit_seconds": 0.0,
+        "submit_offsets_seconds": [
+          0.0
+        ],
+        "total_http_calls": 3,
+        "terminal_state": "success",
+        "requests": [
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -15.0,
+            "timeout_setting": 3.0
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": 0.0,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/activity/detail",
+            "send_offset_seconds": 0.1,
+            "timeout_setting": 20
+          }
+        ],
+        "scheduler_snapshot": {
+          "phase": "success",
+          "planned_at": 10015.0,
+          "actual_send_at": 10015.0,
+          "actual_send_wall": 10015.0,
+          "actual_send_monotonic": 15.0,
+          "dispatch_lateness_ms": 0.0,
+          "last_send_at": 10015.0,
+          "attempts": 1,
+          "sent_count": 1,
+          "clock_locked": true,
+          "clock_source": "system",
+          "clock_offset_ms": 0.0,
+          "clock_generation": 1,
+          "prefetched": true,
+          "context_ready": true,
+          "prepared_at": 10000.1,
+          "prepare_note": "已按原版读取报名表单，到点直接提交。",
+          "in_flight": false,
+          "needs_confirmation": false,
+          "result_status": "confirmed",
+          "message": "已核验个人报名记录。"
+        }
+      }
+    },
+    "B_form_11111_until_open": {
+      "original": {
+        "first_post_open_submit_seconds": 3.0,
+        "submit_offsets_seconds": [
+          3.0
+        ],
+        "total_http_calls": 11,
+        "terminal_state": "success",
+        "requests": [
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -15.0,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -12.9,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -10.8,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -8.7,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -6.6,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -4.5,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -2.4,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -0.3,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": 1.8,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": 3.0,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/activity/detail",
+            "send_offset_seconds": 4.2,
+            "timeout_setting": 20
+          }
+        ],
+        "scheduler_snapshot": null
+      },
+      "optimized": {
+        "first_post_open_submit_seconds": 0.1,
+        "submit_offsets_seconds": [
+          0.1
+        ],
+        "total_http_calls": 4,
+        "terminal_state": "success",
+        "requests": [
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": -15.0,
+            "timeout_setting": 3.0
+          },
+          {
+            "path": "/v2/signup/info",
+            "send_offset_seconds": 0.0,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/signup/submit",
+            "send_offset_seconds": 0.1,
+            "timeout_setting": 20
+          },
+          {
+            "path": "/v2/activity/detail",
+            "send_offset_seconds": 0.2,
+            "timeout_setting": 20
+          }
+        ],
+        "scheduler_snapshot": {
+          "phase": "success",
+          "planned_at": 10015.0,
+          "actual_send_at": 10015.1,
+          "actual_send_wall": 10015.1,
+          "actual_send_monotonic": 15.100000000000364,
+          "dispatch_lateness_ms": 100.0,
+          "last_send_at": 10015.1,
+          "attempts": 1,
+          "sent_count": 1,
+          "clock_locked": true,
+          "clock_source": "system",
+          "clock_offset_ms": 0.0,
+          "clock_generation": 1,
+          "prefetched": false,
+          "context_ready": true,
+          "prepared_at": 10015.1,
+          "prepare_note": "已在提交前沿用原版读取报名表单。",
+          "in_flight": false,
+          "needs_confirmation": false,
+          "result_status": "confirmed",
+          "message": "已核验个人报名记录。"
+        }
+      }
+    }
+  }
+}
