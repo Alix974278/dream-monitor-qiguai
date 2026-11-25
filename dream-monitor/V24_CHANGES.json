@@ -1,0 +1,117 @@
+[
+  {
+    "path": "00-先看这里.txt",
+    "status": "included in v2.4 changes",
+    "sha256": "f436618a7d0c9d3f400b3c1e73faf77905a6ad9e3476149464c16e870ce79fd2"
+  },
+  {
+    "path": "board_rules.py",
+    "status": "included in v2.4 changes",
+    "sha256": "e20a835892e551d3f062a233c7388aea18cf4347d46cf5428b711487203e489a"
+  },
+  {
+    "path": "BUILD_INFO.json",
+    "status": "included in v2.4 changes",
+    "sha256": "a4e9704e2d31f5be377c178da173478ca39caa46063c43b3d28ca9c5f15277fc"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "status": "included in v2.4 changes",
+    "sha256": "3f4862f8ce1e746c523c5d450d687fa656ea7c62bf1ae34e5219f9a5331685e0"
+  },
+  {
+    "path": "gui_server.py",
+    "status": "included in v2.4 changes",
+    "sha256": "035ec6ad1eaf3409e8f05bff05573e67982bfd2df3b47c2f4d509489fc226f3f"
+  },
+  {
+    "path": "monitor.py",
+    "status": "included in v2.4 changes",
+    "sha256": "d7c8c6e1db38c60c0f73858bc5d4fdb7cc549556dee812e37da2d059c9039a67"
+  },
+  {
+    "path": "README.md",
+    "status": "included in v2.4 changes",
+    "sha256": "d75d8a6fa02763214759c0b1b20e7721246a632387f9933a970ac0526f95daa4"
+  },
+  {
+    "path": "tests/test_board_eligibility.py",
+    "status": "included in v2.4 changes",
+    "sha256": "4e5e0ef03e620751001694955188803b586f97b762440ba9b1288f2cbbac70c0"
+  },
+  {
+    "path": "tests/test_board_ui.cjs",
+    "status": "included in v2.4 changes",
+    "sha256": "2967c108d852ef2d6efa458cc35391ca8d83acc05ead6a620948870532614505"
+  },
+  {
+    "path": "tests/test_original_compat.py",
+    "status": "included in v2.4 changes",
+    "sha256": "b715e9650ca07988f0b5cf93c1d712c60004d54396e4afbca9b83ce2aa2f615d"
+  },
+  {
+    "path": "ui/app.css",
+    "status": "included in v2.4 changes",
+    "sha256": "b05a7eab7191f311563bb2c6f20f6cc66829590fec549c88e8a1010390d15306"
+  },
+  {
+    "path": "ui/app.js",
+    "status": "included in v2.4 changes",
+    "sha256": "c164412293bf6e988349f35b6150f0bff4dba9eda7476053aa5457fb6eb71981"
+  },
+  {
+    "path": "ui/board.js",
+    "status": "included in v2.4 changes",
+    "sha256": "b777202381d37dbcaa81bb337b380c98e4f208e37e947d9256ccfa68bc6231bf"
+  },
+  {
+    "path": "ui/index.html",
+    "status": "included in v2.4 changes",
+    "sha256": "838416db71724aa54fbd63f21cb5a753dc88fb82f093fbc1d1e926e46184a54e"
+  },
+  {
+    "path": "UPSTREAM_BASELINE.json",
+    "status": "included in v2.4 changes",
+    "sha256": "23e382ceb2e51f137ed3601cd68cd0e8b0ffb370b7fa7c2726d3487da75e38b1"
+  },
+  {
+    "path": "V23_PROTECTED_BASELINE.json",
+    "status": "included in v2.4 changes",
+    "sha256": "f36866cfc9827f20d4e1ee97a26c899d5deb380e481f8d286028bc9de1455323"
+  },
+  {
+    "path": "V24_BROWSER_VALIDATION.json",
+    "status": "included in v2.4 changes",
+    "sha256": "a46135f5249abe3dd300a31272621570dbe6de6a3b0c4bce7f22021f12299f01"
+  },
+  {
+    "path": "V24_OFFLINE_TESTS.txt",
+    "status": "included in v2.4 changes",
+    "sha256": "8d4d1d091eef4290c334a0a65a1f87ac169385ae466a5ad3128bb5c78e692db5"
+  },
+  {
+    "path": "VALIDATION.md",
+    "status": "included in v2.4 changes",
+    "sha256": "45db082adb17ebbfb5c3a0b64481e4d147095b274ef8a1fcd01de6da233956eb"
+  },
+  {
+    "path": "VALIDATION_V24.md",
+    "status": "included in v2.4 changes",
+    "sha256": "945099446599f1ba5fec5fc80a15fde264412e9cb9b02dcf5c5156316ffb507e"
+  },
+  {
+    "path": "VERSION",
+    "status": "included in v2.4 changes",
+    "sha256": "1f7484dbb5e19b1f436e27024259e27d420afa365d44998c1c37ce57c169ba1d"
+  },
+  {
+    "path": "报名筛选需求提示词.txt",
+    "status": "included in v2.4 changes",
+    "sha256": "64345f61b87ebfb93411ba9a1c40f730b1e4545094dc5be64a3acaf0f8018d3d"
+  },
+  {
+    "path": "本次更新说明.txt",
+    "status": "included in v2.4 changes",
+    "sha256": "71ed3b64584583a2be8e749c77dd6506390fe0303f8bb109a4221708d5c1ba3d"
+  }
+]

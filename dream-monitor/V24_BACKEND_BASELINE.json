@@ -1,0 +1,32 @@
+{
+  "backend_files": {
+    "autosign.py": "a877a66e2abf5c3da1cd4b715a5b608148b4eb2306afb20ce803c55ff317cacd",
+    "board_rules.py": "e20a835892e551d3f062a233c7388aea18cf4347d46cf5428b711487203e489a",
+    "check_local.py": "4b1dff94992ed5b04fbe12286c19609c90be8b9b2934855b0e30a4ed90cc2549",
+    "cli.py": "f63afe1a6d67a0b2896a2d1c67933727d19d810bfd0067c59cd12608582374ce",
+    "detail_cache.py": "bfb954ba598eb1239a419cc085df2daedbbf69c371eb0711c560eafbbd988999",
+    "dm_des.py": "48b40ae340398126bfe126703088bfcfca5865f8a92bdd453572e6385d01f569",
+    "dmclient.py": "6ef871d5c6aa6a3662965e020f3668a2174a7a592b901531220df59c42c399b4",
+    "dmcrypto.py": "f504c68bed1c5ee5a71eef2049644af3bfa157c2eb715ded2afbeb797eab0839",
+    "gui_server.py": "035ec6ad1eaf3409e8f05bff05573e67982bfd2df3b47c2f4d509489fc226f3f",
+    "monitor.py": "d7c8c6e1db38c60c0f73858bc5d4fdb7cc549556dee812e37da2d059c9039a67",
+    "notify.py": "b66c2557165f389b23bb4c154b0a963ce1e1cade447ae3b3654f96c6c977c4b6",
+    "precision/__init__.py": "98bfec89fb5fcb29ed22971379c50aaa331ee47f4333d99714b25e3ce7fa262c",
+    "precision/authority.py": "c0f5b18244b8cbc9ea33a5082213903b20c3663d1e539ce525d3799ba62dc43b",
+    "precision/clock.py": "6628a65e9a191ec8c3c1520059606ff6b598780179de516f3d5bedf829e72044",
+    "precision/signup.py": "809440c57bf21750a90b96d927d15385128f4c3e5f59b149312c540f90e8e0cf",
+    "precision/time_sync.py": "af825af4d3d23ab0ff6ae30e180646cd500154fb0e31bbfa87f94c8a388e3e7d",
+    "rules.py": "1c077f3fed80edaa9ceda550096ae1a95ae310bab3f693325e8ab97975982c44",
+    "run_local.py": "af96277922e043569b70273e7b7dac8970a72b595e204434a5c262e6611ad4d9",
+    "share.py": "1f3c4c5c2b145f4f2f09c891c99a4aef23b26c3d273dc7dcf76f3738296c31f3",
+    "store.py": "5e7461ca45e3f44adbb0e6701ab9a21cadd3e3f6547fb2be370bfcbaa5a388b1",
+    "test_offline.py": "d4460185c058eb26031201aac97e20a8d28114b07e6bc0d62f0576a8b1b8d2d9",
+    "users.py": "18ba21690b9df3b5f2207620f64479fed88348564c356bb3257a09ccc3f73b63",
+    "watch.py": "12bb7cfbe438714d60714711f1bb8619f864b795ba484a4e7ca109fedd289149"
+  },
+  "timed_ui_section": {
+    "start": "/* ---------------- 定时报名 ---------------- */",
+    "end": "/* 报名 / 取消报名 */",
+    "sha256": "ed00c7f5046f5efb7d71f3f2ca8ff3890540bf523a98149fc1bb2811ad15a7ce"
+  }
+}

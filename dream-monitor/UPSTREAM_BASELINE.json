@@ -1,0 +1,61 @@
+{
+  "upstream": "uploaded dream-monitor 2.2.2",
+  "unchanged_files": {
+    "rules.py": "1c077f3fed80edaa9ceda550096ae1a95ae310bab3f693325e8ab97975982c44",
+    "dmcrypto.py": "f504c68bed1c5ee5a71eef2049644af3bfa157c2eb715ded2afbeb797eab0839",
+    "dm_des.py": "48b40ae340398126bfe126703088bfcfca5865f8a92bdd453572e6385d01f569",
+    "ui/login.html": "6ea883494a1e9bcee051c2d278cf10d36c31197a03c332c2e50549bd1d5336ce",
+    "ui/login.js": "7dae43f9f1ebdb7b7bed2729aa573e03aa07929a73bd63ec9188b8b337b281c5"
+  },
+  "unchanged_functions": {
+    "dmclient.py": {
+      "DreamClient.__init__": "aabf9a6641ccfb187894d00eeed4a8bc630600960a827e05d218f6099d0fbeeb",
+      "DreamClient._throttle": "70071b1d5454b737b5f85a68126de5e02c07ef26b7edf5e92ebd47786d7946ab",
+      "DreamClient.login_phone": "8c7750d0972b11de7ec3032650094f95382cdd520464e397ec570ea34b3cc1c5",
+      "DreamClient.login_account": "7f40725430fb9972b3aa7c2ccb45fdb489ebc4284a9594a21b58f1af4976aba8",
+      "DreamClient.activities": "46d7509daa4470f110392b3ea2b526ced0a8e11d1051293d0ce4e96e1bb7b716",
+      "DreamClient.detail": "295d1178caad1bb1afbb95a16c762f7d76440bafd615cae7f83384973e2f95c6",
+      "DreamClient.signup_info": "0b20522669eb4d28a7425d4470b0da5b1d7141ada179f2328f1c0da8ec22ace6",
+      "DreamClient.signup_form": "f06c0da1311db154f7bc8d3c8d4462d36acfc819e10c24e34890dbf41ec80e96",
+      "DreamClient.submit": "a4ef66f9308f5960c5203e175db1df0fc76e686c592123573a3144a676c453ad",
+      "DreamClient.cancel": "ad05aaba4fcce8ccc9e24082fc7dde9aab5bfdd4dbd6ab5e1ae9468661ff6243",
+      "_ensure_identity": "f34733c5aca58671e63c115a0ac751b21884899b71806159332531af3725a35f",
+      "_ua_json": "62a3d8a10029c288900db92590869c7095da8b6fda38c37314805795ea10a02e"
+    },
+    "gui_server.py": {
+      "_api_login": "6a800e9651e4d34d439b033038f8356591d0619879ae286bbaa793dab00710aa",
+      "_profile_of": "293b2e77c8d88168de832f3e539a5a91774ba662f0b1d637bef3af8d5eba7955",
+      "_token_alive": "eeca5c27d60129fa98b917a7d58c69eb1a727065b798f9ba0db1800792128127",
+      "_build_signup_data": "4996edcb968923d5b98e6bdcfe44d75f11ba63458647da27f62f001421aaa69d",
+      "Hub.signup": "4820c9147c74cdcf86f60ea10142073fa081c74ae0f714bc9733b7daf7f2705c",
+      "Hub.cancel_signup": "6c0dd7233c7cf90aa281174f0e9bfec97c2ae027ea01f344191a07c533216eaf"
+    },
+    "users.py": {
+      "Users.__init__": "0e02f0325c644a2c98dddef741541bb72ff8c4e392040d9bfac95bcdd52a7031",
+      "Users._migrate": "2b2273998f5fa32193d044bd3e0cf6a44c561b3d119e3afd05f75cb62de3f7b5",
+      "Users._load_key": "72e2df28a79f8310a15baeade61cd4023f5a8ae43d6fc3cc475c58b742103be6",
+      "Users._conn": "1bd6d7699d1e7cae8e1c779fe152acc53a4dfed33415ccdcec534683e7e6d21d",
+      "Users._db": "40608941e82d0658eacc6f57c2f45779aeb99092e2f7fa8ae6efa97cbb0ea1f9",
+      "Users.encrypt": "a079fae519a9795f9dc663736bd15ead2a352384c3317822a6699aa9b1ba7d81",
+      "Users.decrypt": "1639cfbfbd85a1ae02a9001d3182a9c13b89e354b1e20fd95457ace509f929b2",
+      "Users.upsert": "164f8fa7f4d19fa9ffa949ca75a0e2baad5fdf14729eac8db65184da59fdb773",
+      "Users.get": "1201872823fc0416afe5eb202e1d78ef08a82f0956f407cdb133d431b6e14acf",
+      "Users.by_account": "5d011d562c243af53734201dcc0d80077c7abf43c013bbf41a55cf7a6738326e",
+      "Users.check_password": "2222b62f0fff0d819d2ace02f2ee76865ea5d4a44dcbd0c0bf744e4be34e8e98",
+      "Users.password_of": "9d01cd67870e5121ac2fbafda8c2fce241231ae9da036a3e9e8b475e0a88be3a",
+      "Users.set_token": "9f7a69cb23afbf3d9c5ee824f8f0f0437fe50347e1801e434a1785148add9740",
+      "Users.touch": "5ae81cc0133fca87c70f7da09f13f1d3e8bc90ca49de2230ebdbefdbf08e371c",
+      "Users.count": "5bb5f5d72fcb35487de7be668731aa3998ec37ef0fdf387efa7779b928c85fe6",
+      "Users.db_for": "016815f22218990d7cac977700c5b095b745a2058e4fa40fb4631da10b21c476",
+      "Users.new_session": "60b6779e17bea4430532a5c7f82ef5b2643b4e56c7ffc33e095a3c9855ce0abf",
+      "Users.session_uid": "62091bd5296dec8a27215cde90c9af8c54028a22f984bba6f82ec67d48b3f4e8",
+      "Users.drop_session": "34105a73824d4b8b30a71462e8cee64d05251c532f723536474680cde547d456"
+    }
+  },
+  "authorized_v24_changes": {
+    "monitor.py": {
+      "original_sha256": "5d68872b6282b258b3be53ce2256c481bfcd5a308384cc166c5df99eea2e224b",
+      "reason": "User requested account-specific eligibility including future signup; private detail evidence is stamped and refreshed. Legacy CLI behavior remains opt-in unchanged."
+    }
+  }
+}

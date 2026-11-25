@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "browser": "Microsoft Edge headless",
+  "viewport": [
+    1440,
+    390
+  ],
+  "timezone": "America/New_York (display remains Asia/Shanghai)",
+  "errors": [],
+  "forbidden": [],
+  "overflow": {
+    "width": 390,
+    "document": 390,
+    "wide": []
+  },
+  "checks": [
+    "default eligible includes future signup",
+    "nearest signup first",
+    "unknown separate",
+    "counts",
+    "filter persistence",
+    "all filters",
+    "drawer current signup",
+    "drawer future scheduling",
+    "ineligible/full no signup button",
+    "missing opening time cannot schedule",
+    "refresh",
+    "automatic refresh yields to imminent scheduled task",
+    "mobile no horizontal overflow",
+    "mobile list scrolls",
+    "closed drawer hidden",
+    "no platform submission"
+  ]
+}

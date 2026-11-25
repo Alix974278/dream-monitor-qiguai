@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "viewports": [
+    1440,
+    390
+  ],
+  "errors": [],
+  "forbidden": [],
+  "checks": [
+    "first complete load",
+    "no timestamp-only reminders",
+    "no overlay during background fetch",
+    "menu stays open",
+    "DOM identity and order held",
+    "scroll offset held before apply",
+    "frozen counts",
+    "click applies latest data",
+    "anchor restored after insertion",
+    "drawer preserved",
+    "nearest surviving anchor after removal",
+    "slow manual refresh applies with anchor",
+    "clock boundary queues update",
+    "mobile reminder no layout shift or overflow",
+    "mobile anchor restoration",
+    "live scheduler state bypasses gate",
+    "auto refresh yields to imminent task",
+    "no signup/cancel/task submissions"
+  ]
+}
